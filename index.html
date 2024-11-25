@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Hieu Trieu - Besaitungsservice</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Intro -->
+		<div id="intro">
+			<h1>Hieu Trieu</h1>
+			<h2>Besaitungsservice</h2>
+			<p>Wohnst du in Hamburg und suchst jemanden, der deine Schläger mit Liebe und Präzision bespannt? Schreib
+				mir einfach per WhatsApp unter +49 1234567890 – ich freue mich darauf, dir zu helfen! 🎾😊</p>
+		</div>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active" id="link-besaitungsmaschine"><a href="#"
+						onclick="showSection(event, 'besaitungsmaschine')">Meine Besaitungsmaschine</a></li>
+				<li id="link-turniere"><a href="#" onclick="showSection(event, 'turniere')">Turniere</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Besaitungsmaschine Section -->
+			<div id="besaitungsmaschine" class="section">
+				<article class="post featured">
+					<header class="major">
+						<h3>Perfekte Besaitung mit der Pro's Pro – Für dein bestes Spiel!</h3>
+					</header>
+					<div class="image-gallery">
+						<div class="slides">
+							<img src="images/hieu/1.jpeg" class="active">
+							<img src="images/hieu/2.jpeg">
+							<img src="images/hieu/3.jpeg">
+							<img src="images/hieu/4.jpeg">
+							<img src="images/hieu/5.jpeg">
+							<img src="images/hieu/6.jpeg">
+						</div>
+						<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+						<a class="next" onclick="changeSlide(1)">&#10095;</a>
+						<div class="dots-container">
+							<!-- Dots will be dynamically generated here -->
+						</div>
+					</div>
+				</article>
+			</div>
+
+			<!-- Turniere Section -->
+			<div id="turniere" class="section" style="display: none;">
+				<article class="post featured">
+					<header class="major">
+						<h3>Turniere: Spaß, Erfolg und das sichere Gefühl mit frisch bespannten Schlägern! 🎾</h3>
+						Ich bin oft bei Turnieren in Hamburg und Umgebung dabei – vielleicht laufen wir uns ja über den
+						Weg? Auf ein freundliches Match freue ich mich immer! 😊
+
+
+
+
+
+
+
+					</header>
+					<div class="image-gallery">
+						<div class="slides">
+							<img src="images/hieu/7.jpeg" class="active">
+							<img src="images/hieu/8.jpeg">
+						</div>
+						<a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+						<a class="next" onclick="changeSlide(1)">&#10095;</a>
+						<div class="dots-container">
+							<!-- Dots will be dynamically generated here -->
+						</div>
+					</div>
+				</article>
+			</div>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section class="contact">
+				<section>
+					<h3>Phone</h3>
+					<p><a href="#">+49 1234567890</a></p>
+				</section>
+				<section>
+					<h3>Email</h3>
+					<p><a href="#">hieutrieu@gmail.com</a></p>
+				</section>
+			</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Untitled</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<style>
+		.image-gallery {
+			position: relative;
+			max-width: 100%;
+			overflow: hidden;
+			padding-bottom: 30px;
+		}
+
+		.slides {
+			position: relative;
+			width: 100%;
+			height: 400px;
+		}
+
+		.slides img {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			max-width: 100%;
+			max-height: 100%;
+			display: none;
+		}
+
+		.slides img.active {
+			display: block;
+		}
+
+		.prev,
+		.next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: 50px;
+			height: 50px;
+			margin-top: -25px;
+			color: white;
+			font-weight: bold;
+			font-size: 24px;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			user-select: none;
+			transition: background-color 0.3s;
+		}
+
+		.prev {
+			left: 10px;
+		}
+
+		.next {
+			right: 10px;
+		}
+
+		.prev:hover,
+		.next:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		.dots-container {
+			text-align: center;
+			position: relative;
+			bottom: 0;
+			width: 100%;
+		}
+
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 5px;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.3s;
+		}
+
+		.dot.active {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+	</style>
+
+	<script>
+		let slideIndex = 0;
+		let currentSection = 'besaitungsmaschine';
+		const sections = document.querySelectorAll('.section');
+
+		function showSection(event, sectionId) {
+			event.preventDefault(); // Prevent default anchor behavior
+			sections.forEach(section => {
+				section.style.display = 'none';
+			});
+			document.getElementById(sectionId).style.display = 'block';
+			document.querySelectorAll('.links li').forEach(link => {
+				link.classList.remove('active');
+			});
+			document.getElementById(`link-${sectionId}`).classList.add('active');
+			currentSection = sectionId;
+			resetGallery();
+		}
+
+		function resetGallery() {
+			slideIndex = 0;
+			const slides = document.querySelector(`#${currentSection} .slides`).children;
+			const totalSlides = slides.length;
+			createDots(totalSlides);
+			showSlide(slideIndex, slides);
+		}
+
+		function createDots(totalSlides) {
+			const dotsContainer = document.querySelector(`#${currentSection} .dots-container`);
+			dotsContainer.innerHTML = '';
+			for (let i = 0; i < totalSlides; i++) {
+				const dot = document.createElement('span');
+				dot.classList.add('dot');
+				dot.addEventListener('click', () => showSlide(i, document.querySelector(`#${currentSection} .slides`).children));
+				dotsContainer.appendChild(dot);
+			}
+		}
+
+		function updateDots() {
+			const dots = document.querySelectorAll(`#${currentSection} .dot`);
+			dots.forEach((dot, i) => {
+				dot.classList.remove('active');
+				if (i === slideIndex) {
+					dot.classList.add('active');
+				}
+			});
+		}
+
+		function showSlide(index, slides) {
+			Array.from(slides).forEach((slide, i) => {
+				slide.classList.remove('active');
+				if (i === index) {
+					slide.classList.add('active');
+				}
+			});
+			slideIndex = index;
+			updateDots();
+		}
+
+		function changeSlide(n) {
+			const slides = document.querySelector(`#${currentSection} .slides`).children;
+			const totalSlides = slides.length;
+			slideIndex = (slideIndex + n + totalSlides) % totalSlides;
+			showSlide(slideIndex, slides);
+		}
+
+		function autoChangeSlide() {
+			changeSlide(1);
+			setTimeout(autoChangeSlide, 5000); // Change image every 5 seconds
+		}
+
+		document.addEventListener('DOMContentLoaded', () => {
+			showSection(new Event('init'), currentSection);
+			autoChangeSlide();
+		});
+	</script>
+
+</body>
+
+</html>
